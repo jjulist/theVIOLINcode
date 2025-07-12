@@ -93,7 +93,7 @@ export default function Lesson() {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-amber-900">What You'll Learn</h3>
                     <ul className="space-y-2">
-                      {lesson.objectives.map((objective, index) => (
+                      {lesson.objectives.map((objective: string, index: number) => (
                         <li key={index} className="flex items-start gap-2">
                           <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
                           <span className="text-amber-700">{objective}</span>
@@ -107,7 +107,7 @@ export default function Lesson() {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-amber-900">Practice Exercises</h3>
                     <Accordion type="single" collapsible className="w-full">
-                      {lesson.exercises.map((exercise, index) => (
+                      {lesson.exercises.map((exercise: any, index: number) => (
                         <AccordionItem key={index} value={`exercise-${index}`}>
                           <AccordionTrigger className="text-left">
                             <span className="font-medium">{exercise.name}</span>
@@ -131,7 +131,7 @@ export default function Lesson() {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-amber-900">Sheet Music & Resources</h3>
                     <div className="grid gap-4">
-                      {lesson.resources.map((resource, index) => (
+                      {lesson.resources.map((resource: any, index: number) => (
                         <div key={index} className="border border-amber-200 rounded-lg p-4 flex items-center justify-between">
                           <div>
                             <h4 className="font-medium text-amber-900">{resource.name}</h4>
@@ -151,7 +151,7 @@ export default function Lesson() {
                   <div className="space-y-4">
                     <h3 className="text-lg font-semibold text-amber-900">Practice Tips</h3>
                     <div className="space-y-3">
-                      {lesson.tips.map((tip, index) => (
+                      {lesson.tips.map((tip: string, index: number) => (
                         <div key={index} className="bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-lg">
                           <p className="text-amber-800">{tip}</p>
                         </div>
