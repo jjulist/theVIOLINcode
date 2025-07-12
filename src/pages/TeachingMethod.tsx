@@ -3,12 +3,9 @@
  * Showcases the structured methodology used for violin instruction
  */
 import { 
-  BookOpen, 
   Users, 
-  Target, 
   CheckCircle, 
   ArrowRight, 
-  Music, 
   Clock, 
   Award,
   Brain,
